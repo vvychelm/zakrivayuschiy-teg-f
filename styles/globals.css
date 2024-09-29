@@ -9,7 +9,9 @@
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
+  margin: 0 auto;
+  inline-size: clamp(375px, 100%, 700px);
 }
 
 h1,

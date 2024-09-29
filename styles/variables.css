@@ -1,1 +1,36 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --main-font-weight: 400;
+  --card-title-font-weight: 700;
+  --main-font-size: 18px;
+
+  --bg-color: #ffffff;
+  --bg-image: url();
+  --accent-color: #000000;
+  --button-color-reversed: #ffffff;
+  --heart-contour-color: #000000;
+  --heart-filing-color: #ff0000;
+
+  --gradient-line-color: #d3d3d3;
+  --gradient-start-color: #e7e7e7;
+  --gradient-end-color: #1a1a1a;
+  --gradient-offset: 0.01%;
+  --bg-image: repeating-linear-gradient(
+      to right,
+      var(--gradient-line-color) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradient-line-color) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--gradient-start-color) var(--gradient-offset),
+      var(--gradient-end-color)
+    );
+}

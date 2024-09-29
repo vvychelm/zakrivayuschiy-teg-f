@@ -47,5 +47,7 @@
     --gradient-start-color: #007f0c;
     --gradient-end-color: #004306;
     --gradient-offset: 0%;
+    --main-font-weight: 465;
+    --card-title-font-weight: 785;
   }
 }

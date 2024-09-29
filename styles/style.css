@@ -153,6 +153,7 @@
 .cards__picture {
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
 }
 
 .cards__picture-label {
@@ -184,7 +185,6 @@
 }
 
 .card__icon-button {
-  border: none;
   background-color: transparent;
   border: 2px solid transparent;
   cursor: pointer;

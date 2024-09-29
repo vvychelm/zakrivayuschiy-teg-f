@@ -16,6 +16,8 @@
   --gradient-start-color: #e7e7e7;
   --gradient-end-color: #1a1a1a;
   --gradient-offset: 0.01%;
+  --main-font-weight: 400;
+  --card-title-font-weight: 700;
 }
 
 :root.theme-dark {
@@ -29,6 +31,8 @@
   --gradient-start-color: #007f0c;
   --gradient-end-color: #004306;
   --gradient-offset: 0%;
+  --main-font-weight: 465;
+  --card-title-font-weight: 785;
 }
 
 @media (prefers-color-scheme: dark) {

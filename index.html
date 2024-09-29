@@ -20,8 +20,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <p class="header__description title-decor">закрывающий тег</p>
+      <a class="header__title" aria-hidden="true">&lt;/HTML&gt;</a>
+      <h1 class="header__description title-decor">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -73,10 +73,11 @@
                 Место для ваших воспоминаний о начале обучения.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -110,7 +111,7 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
         <article class="cards__item">
@@ -137,10 +138,11 @@
                 Место для ваших воспоминаний о начале первого спринта.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -174,7 +176,7 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
         <article class="cards__item">
@@ -198,10 +200,11 @@
                 Место для ваших воспоминаний об окончании первого спринта.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -235,7 +238,7 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
         <article class="cards__item">
@@ -261,10 +264,11 @@
                 Место для ваших воспоминаний о начале второго спринта.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -298,7 +302,7 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
         <article class="cards__item">
@@ -325,10 +329,11 @@
                 Место для ваших воспоминаний об окончании второго спринта.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -362,7 +367,7 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
         <article class="cards__item">
@@ -386,10 +391,11 @@
                 Место для ваших воспоминаний о начале третьего спринта.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -423,7 +429,7 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
         <article class="cards__item">
@@ -449,10 +455,11 @@
                 Место для ваших воспоминаний об окончании третьего спринта.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -486,7 +493,7 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
         <article class="cards__item">
@@ -514,10 +521,11 @@
                 чувствуете в этой точке пути.
               </p>
             </div>
-            <fieldset class="cards__button">
+            <div class="cards__button">
               <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -551,10 +559,27 @@
               <button class="card__like-button button" type="button">
                 <span class="button__text">Like</span>
               </button>
-            </fieldset>
+            </div>
           </div>
         </article>
       </section>
+      <button
+        class="memory__button button"
+        type="button"
+        onclick="window['dialog'].showModal()"
+        aria-controls="dialog"
+      >
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          class="floppy"
+          aria-hidden="true"
+        >
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
       <dialog class="dialog" id="dialog">
         <div class="dialog__description">
           <svg
@@ -562,6 +587,7 @@
             height="39"
             viewBox="0 0 21 21"
             class="dialog__floppy"
+            aria-hidden="true"
           >
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
@@ -574,19 +600,6 @@
         </form>
       </dialog>
     </main>
-    <footer class="footer">
-      <button
-        class="footer__button button"
-        type="button"
-        onclick="window['dialog'].showModal()"
-        aria-controls="dialog"
-      >
-        <svg width="21" height="21" viewBox="0 0 21 21" class="floppy">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
